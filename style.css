@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.instagram__phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.instagram__phone--img {
+    width: 50rem;
+
+    padding: 0;
+}
+
+.instagram__direita {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.instagram__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+.instagram__direita--login:nth-child(1){
+    min-height: 19rem;
+}
+
+.instagram__direita--logo {
+    height: 3rem;
+}
+
+.instagram__direita--perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.instagram__direita--perfil img {
+    height: 6rem;
+}
+
+.instagram__login {
+    background-color: #0095f6;
+    color: #FFFFFF;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.instagram__logout {
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.not__account {
+    color: rgb(160, 160, 160);
+}
+
+.login__logout {
+    display: inlin-block;
+}
+
+.get__app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.get__app--downloads {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.get__app--downloads:nth-child(1) {
+    background-image: url(img/apple-button.png);
+}
+
+.get__app--downloads:nth-child(2){
+    background-image: url(img/googleplay-button.png);
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width:650px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .instagram__phone {
+        display: none;
+    }
+
+    .instagram__direita {
+        width: 100%;
+    }
+    
+    .instagram__card {
+        border: 1px solid transparent;
+    }
+}
